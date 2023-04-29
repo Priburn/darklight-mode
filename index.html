@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-Night Mode</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+    <label  id="dark-change"></label>
+  </header>
+  <main>
+      <h1>About Tea and Coffee</h1>
+      <div class="respon">
+        <img src="https://i.ibb.co/PTy8xgP/tea-coffee.jpg">
+        <p>After water, tea and coffee are the most loved beverages the world over! Whether you are looking to savour and sip something first thing in the morning or trying to break that mid-evening slump, both these beverages give one an instant zeal of freshness and that complete reboot. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde, veritatis iure, voluptatibus harum exercitationem sed quibusdam sunt vel odio id necessitatibus hic, modi perspiciatis illum nobis amet sapiente illo. </p>
+      </div>
+  </main>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+</body>
+</html>
